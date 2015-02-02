@@ -1,0 +1,136 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dragviewdemo.MainActivity" >
+
+    <com.example.dragviewdemo.ResideView
+        xmlns:reside="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/resideview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ff0"
+        reside:content_id="@id/contentview"
+        reside:left_id="@id/menu_left"
+        reside:mode="both"
+        reside:right_id="@id/menu_right" >
+
+        <LinearLayout
+            android:id="@+id/menu_right"
+            android:layout_width="150dip"
+            android:layout_height="match_parent"
+            android:background="#0f0"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/menu2item1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/badge_bg"
+                android:padding="15dip"
+                android:text="1"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#701"
+                android:gravity="center"
+                android:padding="5dip"
+                android:text="1"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#602"
+                android:gravity="center"
+                android:padding="5dip"
+                android:text="1"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#501"
+                android:gravity="center"
+                android:padding="5dip"
+                android:text="1"
+                android:textSize="20sp" />
+            
+            <RatingBar
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        style="@style/roomRatingBar"
+		        android:rating="3.9"
+		        android:stepSize="0.1"
+		        android:numStars="4"
+		    />
+            <RatingBar
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        style="@style/roomRatingBar"
+		        android:rating="0.8"
+		        android:stepSize="0.1"
+		        android:numStars="4"
+		    />
+            <RatingBar
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        style="@style/roomRatingBar"
+		        android:rating="2.5"
+		        android:stepSize="0.1"
+		        android:numStars="4"
+		    />
+            <RatingBar
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        style="@style/roomRatingBar"
+		        android:rating="1.2"
+		        android:stepSize="0.1"
+		        android:numStars="4"
+		    />
+            <RatingBar
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        style="@style/roomRatingBar"
+		        android:rating="3.8"
+		        android:stepSize="0.1"
+		        android:numStars="4"
+		    />
+            
+            
+            
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/menu_left"
+            android:layout_width="150dip"
+            android:layout_height="match_parent"
+            android:background="#bb0"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:id="@+id/contentview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <com.example.dragviewdemo.ResideListView
+                    android:id="@+id/listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#0ff"
+                    android:scrollbars="vertical" >
+                </com.example.dragviewdemo.ResideListView>
+            </LinearLayout>
+        </LinearLayout>
+    </com.example.dragviewdemo.ResideView>
+
+</RelativeLayout>

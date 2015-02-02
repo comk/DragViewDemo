@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ResideView">
+        <attr name="mode">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+            <enum name="both" value="2" />
+        </attr>
+        <attr name="left_id" format="reference" />
+        <attr name="right_id" format="reference" />
+        <attr name="content_id" format="reference" />
+    </declare-styleable>
+</resources>
